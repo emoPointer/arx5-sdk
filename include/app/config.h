@@ -113,7 +113,7 @@ class RobotConfigFactory
             MotorType::DM_J4310,                                              // gripper_motor_type
             (Eigen::Vector3d() << 0, 0, -9.807).finished(),                   // gravity_vector
             "base_link",                                                      // base_link_name
-            "eef_link",                                                       // eef_link_name
+            "link6",                                                          // eef_link_name: body origin
             model_dir + "/X5.urdf"                                            // urdf_path
         );
         configurations["X5_umi"] = std::make_shared<RobotConfig>(

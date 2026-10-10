@@ -1,0 +1,7 @@
+# Optional offline geometric screening only; no hardware/controller dependency.
+# Use an isolated Python environment. Does not alter the robot's SDK environment.
+mujoco>=3.3,<4
+numpy>=1.26,<3
+scipy>=1.11,<2
+trimesh>=4,<5
+python-fcl>=0.7,<0.8

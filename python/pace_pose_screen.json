@@ -1,0 +1,491 @@
+{
+  "passed": true,
+  "library": {
+    "schema_version": 1,
+    "model": "X5",
+    "protocol": "short",
+    "seed": 20261009,
+    "repeats": 2,
+    "sample_hz": 500,
+    "clearance_m": 0.01,
+    "poses": {
+      "pose1": {
+        "split": "train",
+        "q_center": [
+          0,
+          1.0,
+          1.4,
+          -0.25,
+          0,
+          0
+        ]
+      },
+      "pose2": {
+        "split": "train",
+        "q_center": [
+          -0.4,
+          1.2,
+          1.8,
+          0.15,
+          0,
+          0
+        ]
+      },
+      "pose3": {
+        "split": "train",
+        "q_center": [
+          0.4,
+          1.0,
+          1.5,
+          -0.35,
+          0,
+          0.2
+        ]
+      },
+      "heldout": {
+        "split": "validation",
+        "q_center": [
+          0.15,
+          1.1,
+          1.65,
+          -0.1,
+          0,
+          -0.2
+        ]
+      }
+    }
+  },
+  "code_sha256": {
+    "pace_collection.py": "8b09a7b86d045b6f8b59dac634874a14650b515e10a8c5d8c90b7d21dfaae8e8",
+    "pace_collision.py": "194a4f132745a63f1997ed2e13bec9ec64e858f3f0762d701cbecf1b99c735e4",
+    "pace_pose_library.json": "bea8c0ecfff401ffdcc6096aadfe073fa575d5eda5de7330f21dda0f33d66f23"
+  },
+  "sdk_source_sha256": {
+    "models/X5.urdf": "b74c5fcf81901767fad33906852ae3400fad739270bd004653110577be11a08d",
+    "models/X5_gripper.urdf": "82494a99d45762f3fe78a0c7d8feb8dd799b5d5adabab9abdb40d38e32139fc8",
+    "models/meshes/X5/base_link.STL": "ce4a722664700af1dc76cf6174b885f97967a0930c5f67779562fbb3b7bb418a",
+    "models/meshes/X5/link1.STL": "5c4c74d459c2d2e49a4246208659ac41f5942d163394712039670aa3b8eee049",
+    "models/meshes/X5/link2.STL": "2824cb02a5a4e029894ba1fb7a620f7d643355171ca0bdfee4475932bfbbd0f8",
+    "models/meshes/X5/link3.STL": "dcd492ebdd522245cf0962d390d3665142a4425dcb3b727a99d3c9eb4953bac8",
+    "models/meshes/X5/link4.STL": "a1744299ccde9be510cb9415051dadf09677895e410acb062f275cb5ee4e7e33",
+    "models/meshes/X5/link5.STL": "3bb540bb30ff468653f384bb8387b37e195e0f1578d1e17f32a620101322a46e",
+    "models/meshes/X5/gripper/link6.STL": "32dca4ededcf3215163207b9aea1046114ae59921555d1e068ee46fa6e53915e",
+    "models/meshes/X5/gripper/link7.STL": "ec3d40b39cccde0075ca3d16603f14f180fce41a46b446473d384def7a1b0be0",
+    "models/meshes/X5/gripper/link8.STL": "29f7a8379cad81797e82e4ba099455cc275ac6ac5bb9e264ce46719fd7d2bb60"
+  },
+  "trajectory_sha256": {
+    "pose1": "9924f15fcad4b58cba83278190bf9fcbf8b0871d159f2be8c2385b70dec90e06",
+    "pose2": "1c238a1e4f0ff0b3b6e8e9b18919d27a79250404b6d3fbd69a53af71b6ad5c3b",
+    "pose3": "6a72d6e3a28da02e810713023e77c1c9bb75965d3f606299a80354c4e8ac8452",
+    "heldout": "dae4fa6d7f5ec5a6b9fc49c1a769014c25c950e5543ed886b456856e18b0c07b"
+  },
+  "results": [
+    {
+      "passed": true,
+      "nominal_states": 171609,
+      "unique_states": 107594,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "pose1",
+      "model": "sdk",
+      "q_center": [
+        0,
+        1.0,
+        1.4,
+        -0.25,
+        0,
+        0
+      ],
+      "link6_position_m": [
+        0.174354936964367,
+        0.0010024752678900654,
+        0.4837123176238837
+      ],
+      "trajectory_sha256": "9924f15fcad4b58cba83278190bf9fcbf8b0871d159f2be8c2385b70dec90e06"
+    },
+    {
+      "passed": true,
+      "nominal_states": 179209,
+      "unique_states": 115506,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "pose2",
+      "model": "sdk",
+      "q_center": [
+        -0.4,
+        1.2,
+        1.8,
+        0.15,
+        0,
+        0
+      ],
+      "link6_position_m": [
+        0.1513060523950465,
+        -0.06288296897107915,
+        0.5953248876411787
+      ],
+      "trajectory_sha256": "1c238a1e4f0ff0b3b6e8e9b18919d27a79250404b6d3fbd69a53af71b6ad5c3b"
+    },
+    {
+      "passed": true,
+      "nominal_states": 173509,
+      "unique_states": 109665,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "pose3",
+      "model": "sdk",
+      "q_center": [
+        0.4,
+        1.0,
+        1.5,
+        -0.35,
+        0,
+        0.2
+      ],
+      "link6_position_m": [
+        0.1457472976216408,
+        0.06270934013768512,
+        0.5033292885180314
+      ],
+      "trajectory_sha256": "6a72d6e3a28da02e810713023e77c1c9bb75965d3f606299a80354c4e8ac8452"
+    },
+    {
+      "passed": true,
+      "nominal_states": 176359,
+      "unique_states": 112727,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "heldout",
+      "model": "sdk",
+      "q_center": [
+        0.15,
+        1.1,
+        1.65,
+        -0.1,
+        0,
+        -0.2
+      ],
+      "link6_position_m": [
+        0.16267187762430185,
+        0.025599287562964864,
+        0.5525522373564494
+      ],
+      "trajectory_sha256": "dae4fa6d7f5ec5a6b9fc49c1a769014c25c950e5543ed886b456856e18b0c07b"
+    },
+    {
+      "passed": true,
+      "nominal_states": 171609,
+      "unique_states": 107594,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "pose1",
+      "model": "clab",
+      "q_center": [
+        0,
+        1.0,
+        1.4,
+        -0.25,
+        0,
+        0
+      ],
+      "link6_position_m": [
+        0.1768268677500508,
+        -0.0005024920317493752,
+        0.4840859149396756
+      ],
+      "trajectory_sha256": "9924f15fcad4b58cba83278190bf9fcbf8b0871d159f2be8c2385b70dec90e06"
+    },
+    {
+      "passed": true,
+      "nominal_states": 179209,
+      "unique_states": 115506,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "pose2",
+      "model": "clab",
+      "q_center": [
+        -0.4,
+        1.2,
+        1.8,
+        0.15,
+        0,
+        0
+      ],
+      "link6_position_m": [
+        0.15240495354630668,
+        -0.06498115110642015,
+        0.5970289858722285
+      ],
+      "trajectory_sha256": "1c238a1e4f0ff0b3b6e8e9b18919d27a79250404b6d3fbd69a53af71b6ad5c3b"
+    },
+    {
+      "passed": true,
+      "nominal_states": 173509,
+      "unique_states": 109665,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "pose3",
+      "model": "clab",
+      "q_center": [
+        0.4,
+        1.0,
+        1.5,
+        -0.35,
+        0,
+        0.2
+      ],
+      "link6_position_m": [
+        0.14861014360984195,
+        0.062285823913698135,
+        0.5037028858338234
+      ],
+      "trajectory_sha256": "6a72d6e3a28da02e810713023e77c1c9bb75965d3f606299a80354c4e8ac8452"
+    },
+    {
+      "passed": true,
+      "nominal_states": 176359,
+      "unique_states": 112727,
+      "widths_m": [
+        0.0,
+        0.044,
+        0.088
+      ],
+      "clearance_lower_bound_m": 0.01,
+      "distance_cap_m": 0.01,
+      "worst": null,
+      "tracking_envelope_sample": {
+        "passed": true,
+        "nominal_states": 4825,
+        "unique_states": 4825,
+        "widths_m": [
+          0.0,
+          0.044,
+          0.088
+        ],
+        "clearance_lower_bound_m": 0.01,
+        "distance_cap_m": 0.01,
+        "worst": null
+      },
+      "name": "heldout",
+      "model": "clab",
+      "q_center": [
+        0.15,
+        1.1,
+        1.65,
+        -0.1,
+        0,
+        -0.2
+      ],
+      "link6_position_m": [
+        0.1651226142446307,
+        0.024447664094695738,
+        0.5536396528578486
+      ],
+      "trajectory_sha256": "dae4fa6d7f5ec5a6b9fc49c1a769014c25c950e5543ed886b456856e18b0c07b"
+    }
+  ],
+  "limitations": [
+    "not fitted dynamic rollout",
+    "not continuous-time collision proof",
+    "no camera/cable/payload/fixture geometry",
+    "adjacent assembly interference is not certified"
+  ],
+  "excluded_assembly_pairs": [
+    [
+      "support_plane",
+      "base_link_hull_0"
+    ],
+    [
+      "base_link_hull_0",
+      "link1_hull_0"
+    ],
+    [
+      "link1_hull_0",
+      "link2_hull_0"
+    ],
+    [
+      "link2_hull_0",
+      "link3_hull_0"
+    ],
+    [
+      "link3_hull_0",
+      "link4_hull_0"
+    ],
+    [
+      "link4_hull_0",
+      "link5_hull_0"
+    ],
+    [
+      "link5_hull_0",
+      "link6_hull_0"
+    ],
+    [
+      "link6_hull_0",
+      "link7_hull_0"
+    ],
+    [
+      "link6_hull_0",
+      "link8_hull_0"
+    ],
+    [
+      "link7_hull_0",
+      "link8_hull_0"
+    ]
+  ],
+  "clab_source_sha256": {
+    "arx5_robot.xml": "e9c6e94f4e89ffac19a81f846e342976b0e1eadcf43d74c47b5dce4d9137aa5f",
+    "base_link.obj": "67032defaf940644a714772847b0b693bd2314af2c7588de32ca8d1424b989f3",
+    "link1.obj": "df3edc597028f6a61f3529f59a561f81e11280330095949e021b467dbf007d12",
+    "link2.obj": "0c56d5577c5637ea2969da49b7d124396d5ba900d18ca6703a4a0ae5de8cb769",
+    "link3.obj": "9ef84ed1fb54257dea952d82c8cbbe779d7c72b7743961331117226a2678c386",
+    "link4.obj": "60dab1488716ed4ed53dcc442efe4a9fd310fca76e1fa7b0bc316f9e0e3a04a6",
+    "link5.obj": "8487a0140fd1a2e73f3744f3342001cf30f87a371fd71b81eb06b0f90ca7ab9e",
+    "link6.obj": "f4582781c8c664bdb81d0ac4a4b28931ebb125dc9eb7cd04920ae52b94a4a2b7",
+    "link7.obj": "37bcc0abb900902ab72776e439bc928bad90e31d248b6d3f7c983d96a78c56a0",
+    "link8.obj": "b0e140845bc20568c66190fe3284d923ff3b1449e071da07186e970ef9045d6c"
+  },
+  "excitation_profile": "chirps_up_to_1hz",
+  "chirp_bands_hz": {
+    "low": [
+      0.1,
+      0.5
+    ],
+    "high": [
+      0.5,
+      1.0
+    ]
+  }
+}

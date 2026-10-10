@@ -23,6 +23,10 @@
 Other Update Logs: Please refer to [update_logs.md](update_logs.md) for more details.
 
 ## Features
+
+For guarded, opt-in dynamics-identification acquisition using an already-owned
+controller, see [PACE data collection](python/README_pace_collection.md).
+This collector is offline-tested only; it does not connect to hardware by itself.
 - Run without ROS
 - No `sudo` requirement for building the library (all dependencies are managed under conda environment, thanks to [Cheng Chi](https://cheng-chi.github.io/))
 - Simple python interface with complete type hints (see `python/arx5_interface.pyi`, please include it into your vscode config `"python.analysis.extraPaths"`)
